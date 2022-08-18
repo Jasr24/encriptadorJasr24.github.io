@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador de texto Jasr</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Funcione en dispositivos moviles (Celulares)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!--bootstrap-->
+    <link rel="stylesheet" href="style.css"> <!--Estilos personalizados relacion con el archivo .css-->
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet"> <!--Tipo de letra-->
+</head>
+
+<body>
+    <header class="encabezado"></header>
+    <main>     
+        <div class="container">
+            <div class="row ">
+
+                <section class="col-sm-12 col-md-1">
+                    <div class="logo">
+                        <img src="imagenes/Logo.png" alt="logo-alura">
+                    </div>
+                </section>
+
+                <section class="col-sm-12 col-md-7">
+                    <form>                        
+                        <div class="entrada">
+                            <textarea cols="70" rows="10" placeholder="Ingresa el texto aqui" id="input" class="scroll"></textarea>
+                        </div>                    
+
+                        <div>
+                            <p><img src="imagenes/Vector.png" alt="vector" class="vector"> Solo letras  minúsculas y sin acentos</p>
+                        </div>
+
+                        <div class="entrada-botones">                            
+                            
+                            <button type="button" class="boton botonE" onclick="capturar(1)">Encriptar</button>
+                            <button type="button" class="boton botonD" onclick="capturar(2)">Desencriptar</button>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="resultado col-sm-12 col-md-4">
+                    <div id="nodata"> <!--Al inicio habilitado display: block-->
+                        <img src="imagenes/Muñecoimagen.png" alt="muñeco mirando al diamante" class="muñeco">
+                        <p>Ningún mensaje fue encontrado</p>
+                        <p>Ingresa texto que deseas encriptar o desencriptar.</p>
+                    </div>
+
+                    <div id="data"> <!--Al inicio deshabilitado display: none-->
+                        <div class="muestra-result scroll">
+                            <p id="resultt"></p>
+                        </div>
+                        <button type="button" class="boton botonR" onclick="copiartexto()">Copiar</button>
+                    </div>
+                </section>
+
+            </div>
+        </div>    
+    </main>
+    <footer class="pie-pagina">
+        <p>&#9401 Desarrollado por José Andres Saavedra Romero - Grupo 3 Alura</p>
+        
+        <!--Siguientes ipervinculos a paginas externas-->
+        <a href="https://www.linkedin.com/in/joséandressaavedraromero/"><img src="imagenes/Linkedin.png" class="pgn" alt="icono Linkedin"></a>
+        <a href="https://github.com/Jasr24"><img src="imagenes/GitHub.png" class="pgn" alt="icono GitHub"></a>
+        <a href="https://twitter.com/JarsGamer/likes"><img src="imagenes/Twitter.png" class="pgn" alt="icono Twitter"></a>
+    </footer>
+    
+</body>
+
+<!--Relacionando el archivo .js-->
+<script type="text/javascript" src="logica.js"></script>
+
+</html>
