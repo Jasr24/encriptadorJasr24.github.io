@@ -16,3 +16,5 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 ## Dependency Management
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+// Repositorio para la vitrina de proyectos para el Challenger del Programa Oracle ONE Encriptador Autor: Jose Andres Saavedra Romero, Demo: https://jasr24.github.io/encriptadorJasr24.github.io/
